@@ -8,16 +8,20 @@
 }
 
 /* styles que se repiten */
-.skills {
+.about .skills {
     font-family: 'Poppins', sans-serif;
 }
 
-/* .skills {
+section {
+    padding-bottom: 100px;
+}
+
+.about .about2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-} */
+} 
 
 .section-style {
     max-width: 1300px;
@@ -34,8 +38,6 @@
     /*background: gray;*/
     font-family: 'Ubuntu', sans-serif;
 }
-
-
 
 .nav .menu li a{
     color: white;
@@ -102,6 +104,42 @@
     font-size: 40px;
 }
 
+/* about me*/
+
+.about {
+    padding-top: 100px;
+}
+
+.about .title {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+.about .about2 .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+.about .about2 .left {
+    width: 45%;
+}
+
+.about .about2 .right {
+    width: 55%;
+}
+
+.about .about2 .right p{
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+
+
+
+
 /* skills */
 
 .skills .stats{
@@ -121,7 +159,6 @@
     max-width: 80%;
     padding: 0 75px;
     margin: auto;
-    align-items: center;
 }
 
 .bar{
