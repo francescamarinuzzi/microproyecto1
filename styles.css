@@ -1,1 +1,48 @@
-# microproyecto1
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 15 0px;
+    background: gray;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav2 {
+    max-width: 1300px;
+    padding: 0 75px;
+    margin: auto;
+}
+
+.nav .menu li a{
+    color: white;
+    
+}
+
+.nav .logo a {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.nav .menu li {
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.nav .nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
