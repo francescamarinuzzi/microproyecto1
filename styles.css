@@ -7,6 +7,25 @@
     text-decoration: none;
 }
 
+/* styles que se repiten */
+.skills {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.section-style {
+    max-width: 1300px;
+    padding: 0 75px;
+    margin: auto;
+}
+
+
 /*navbar*/
 .nav {
     position: fixed;
@@ -16,11 +35,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-.nav2 {
-    max-width: 1300px;
-    padding: 0 75px;
-    margin: auto;
-}
+
 
 .nav .menu li a{
     color: white;
@@ -45,7 +60,7 @@
     margin-left: 20px;
 }
 
-.nav .nav2 {
+.nav .section-style {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,7 +85,7 @@
     z-index: -1;
 }
 
-.hero .nav2{
+.hero .section-style{
     margin: auto 0 auto 40px;
 }
 
@@ -86,3 +101,60 @@
 .hero .hero2 .t3{
     font-size: 40px;
 }
+
+/* skills */
+
+.skills .stats{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.stats {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.section-skills {
+    max-width: 80%;
+    padding: 0 75px;
+    margin: auto;
+    align-items: center;
+}
+
+.bar{
+    height: 5px;
+    width: 100%;
+    background: gray;
+    position: relative;
+}
+
+.bar::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: black;
+
+}
+
+.html::before{
+    width: 90%;
+}
+.css::before{
+    width: 60%;
+}
+.js::before{
+    width: 70%;
+}
+.py::before{
+    width: 80%;
+}
+.react::before{
+    width: 70%;
+}
+
+
