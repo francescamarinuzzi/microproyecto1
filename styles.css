@@ -10,8 +10,8 @@
 .nav {
     position: fixed;
     width: 100%;
-    padding: 15 0px;
-    background: gray;
+    padding: 30 0px;
+    /*background: gray;*/
     font-family: 'Ubuntu', sans-serif;
 }
 
