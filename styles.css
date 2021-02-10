@@ -62,7 +62,7 @@ img{
     position: fixed;
     width: 100%;
     padding: 30 0px;
-    background: gray;
+    background: black;
     font-family: 'Ubuntu', sans-serif;
     z-index: 999;
     transition: top 0.3s;
@@ -239,6 +239,10 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+
+#subject {
+    height: 200px;
 }
 
 button {

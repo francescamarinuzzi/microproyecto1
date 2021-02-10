@@ -1,13 +1,13 @@
 //navbar
-var prevScrollpos = window.pageYOffset;
+let beforeScroll = window.pageYOffset;
 window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+let currentScroll = window.pageYOffset;
+  if (beforeScroll > currentScroll) {
     document.getElementById("navv").style.top = "0";
   } else {
     document.getElementById("navv").style.top = "-100px";
   }
-  prevScrollpos = currentScrollPos;
+  beforeScroll = currentScroll;
 }
 
 
