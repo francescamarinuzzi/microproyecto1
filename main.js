@@ -27,7 +27,7 @@ window.onload = changeImg;
 let skills = '{ "skills" : [' +
 '{ "html":"90%"},' + '{"css":"60%" },' +
 '{ "javascript":"70%"},' + '{"python":"80%" },' +
-'{ "react":"70%"}]}';
+'{ "react":"70%"},' + '{ "ruby":"60%"}]}';
 
 let obj = JSON.parse(skills);
 
@@ -46,3 +46,5 @@ document.getElementById("stats3").innerHTML =
 document.getElementById("stats4").innerHTML =
 'React:' + ' ' + obj.skills[4].react;
 
+document.getElementById("stats5").innerHTML =
+'Ruby:' + ' ' + obj.skills[5].ruby;

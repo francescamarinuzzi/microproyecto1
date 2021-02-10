@@ -16,7 +16,7 @@ section {
     padding-bottom: 100px;
 }
 
-.about .about2 {
+.about .about2, .exp .exp2{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -28,6 +28,33 @@ section {
     padding: 0 75px;
     margin: auto;
 }
+
+.title {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+
+}
+
+.left {
+    width: 55%;
+    padding-bottom: 50px;
+}
+
+.right {
+    width: 45%;
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+
 
 
 /*navbar*/
@@ -110,25 +137,10 @@ section {
     padding-top: 100px;
 }
 
-.about .title {
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 50px;
-    font-weight: 500;
-    padding-bottom: 50px;
-}
-
 .about .about2 .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
-}
-.about .about2 .left {
-    width: 45%;
-}
-
-.about .about2 .right {
-    width: 55%;
 }
 
 .about .about2 .right p{
@@ -137,7 +149,17 @@ section {
     font-size: 30px;
 }
 
+/*experience*/
+.exp .exp2 .right li{
+    list-style: none;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 20px;
+}
 
+.exp .exp2 .left2 img{
+    width: 600px;
+}
 
 
 /* skills */
@@ -194,4 +216,7 @@ section {
     width: 70%;
 }
 
+.ruby::before{
+    width: 60%;
+}
 
