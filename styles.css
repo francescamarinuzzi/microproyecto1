@@ -16,7 +16,7 @@ section {
     padding-bottom: 100px;
 }
 
-.about .about2, .exp .exp2{
+.about .about2, .exp .exp2, .contact .contact2{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -196,7 +196,7 @@ img{
     height: 100%;
     left: 0;
     top: 0;
-    background: black;
+    background: green;
 
 }
 
@@ -219,4 +219,43 @@ img{
 .ruby::before{
     width: 60%;
 }
+
+/* contact me */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: gray;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: darkgrey;
+}
+
+.row {
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+/* .contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} */
 
