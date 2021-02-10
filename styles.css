@@ -62,8 +62,10 @@ img{
     position: fixed;
     width: 100%;
     padding: 30 0px;
-    /*background: gray;*/
+    background: gray;
     font-family: 'Ubuntu', sans-serif;
+    z-index: 999;
+    transition: top 0.3s;
 }
 
 .nav .menu li a{
@@ -127,9 +129,6 @@ img{
     font-weight: 600;
 }
 
-.hero .hero2 .t3{
-    font-size: 40px;
-}
 
 /* about me*/
 
@@ -147,6 +146,15 @@ img{
     text-align: justify;
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
+}
+
+.about .about2 .t1{
+    font-size: 30px;
+}
+
+.about .about2 .t2{
+    font-size: 35px;
+    font-weight: 600;
 }
 
 /*experience*/
@@ -204,20 +212,20 @@ img{
     width: 90%;
 }
 .css::before{
-    width: 60%;
-}
-.js::before{
     width: 70%;
 }
-.py::before{
+.js::before{
     width: 80%;
+}
+.py::before{
+    width: 90%;
 }
 .react::before{
     width: 70%;
 }
 
 .ruby::before{
-    width: 60%;
+    width: 75%;
 }
 
 /* contact me */
@@ -233,7 +241,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+button {
   background-color: gray;
   color: white;
   padding: 12px 20px;
@@ -242,7 +250,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+button:hover {
   background-color: darkgrey;
 }
 
@@ -253,9 +261,4 @@ input[type=submit]:hover {
     font-weight: 400;
 }
 
-/* .contact {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-} */
 

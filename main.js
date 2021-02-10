@@ -1,11 +1,25 @@
+//navbar
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navv").style.top = "0";
+  } else {
+    document.getElementById("navv").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+
 //SLIDER DEL HERO
 let i = 0;
 let img = [];
 let time = 4000;
 
-img[0] = 'img/IMG_1290.JPG';
-img[1] = 'img/IMG_1567.JPG';
-img[2] = 'img/IMG_2379.JPG';
+img[0] = 'img/slider1.jpg';
+img[1] = 'img/slider2.jpg';
+img[2] = 'img/slider3.jpg';
 
 
 function changeImg() {
@@ -25,9 +39,9 @@ window.onload = changeImg;
 //JSON SKILLS
 
 let skills = '{ "skills" : [' +
-'{ "html":"90%"},' + '{"css":"60%" },' +
-'{ "javascript":"70%"},' + '{"python":"80%" },' +
-'{ "react":"70%"},' + '{ "ruby":"60%"}]}';
+'{ "html":"90%"},' + '{"css":"70%" },' +
+'{ "javascript":"80%"},' + '{"python":"90%" },' +
+'{ "react":"70%"},' + '{ "ruby":"75%"}]}';
 
 let obj = JSON.parse(skills);
 
@@ -48,3 +62,12 @@ document.getElementById("stats4").innerHTML =
 
 document.getElementById("stats5").innerHTML =
 'Ruby:' + ' ' + obj.skills[5].ruby;
+
+//ALERT CONTACT
+function checkForm() {
+    let text = document.getElementById("form").submit();
+    console.log(text);
+    alert('Su solicitud ha sido enviada!')
+}
+
+

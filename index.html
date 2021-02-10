@@ -8,17 +8,17 @@
 </head>
 <body>
     <!-- NAV BAR-->
-    <nav class="nav">
+    <nav id = "navv" class="nav">
         <div class="section-style">
             <div class="logo">
-                <a href="#"> Welcome. </a>
+                <a name="hero"> Welcome </a>
             </div>
             <ul class="menu">
-                <li><a href="#"> Inicio </a></li>
-                <li><a href="#"> About me </a></li>
-                <li><a href="#"> Experience </a></li>
-                <li><a href="#"> Skills </a></li>
-                <li><a href="#"> Contact me </a></li>
+                <li><a href="#hero"> Inicio </a></li>
+                <li><a href="#about"> About me </a></li>
+                <li><a href="#exp"> Experience </a></li>
+                <li><a href="#skills"> Skills </a></li>
+                <li><a href="#contact"> Contact me </a></li>
             </ul>
         </div>
     </nav>
@@ -29,9 +29,8 @@
         <img name = "slider" class="slider">
         <div class="section-style">
             <div class="hero2">
-                <div class="t1"> My name is</div>
-                <div class="t2"> Francesca Marinuzzi</div>
-                <div class="t3"> and I'm a Web Developer </div>
+                <div class="t1"> to my world of</div>
+                <div class="t2"> Web Development</div>
             </div>
         </div>
     </section>
@@ -40,15 +39,20 @@
 
     <section class = "about">
         <div class="section-style">
-            <h2 class="title"> About me </h2>
+            <a name="about"> <h2 class="title"> About me </h2> </a>
             <div class="about2">
                 <div class="left">
                     <img src="img/0071.jpg">
                 </div>
                 <div class="right">
-                    <p> Certified, experienced and bilingual Full Stack Web Developer. Despite my young age and and short time working,
-                        I have amassed abundant experience across the world of web development. My dedication has seen me excel in 
-                        all the projects I have undertaken, and I am proven in my ability to the understand the basic idea of my 
+                    <div class="t1"> My name is </div>
+                    <div class="t2"> Francesca Marinuzzi Gamardo. </div>
+                    <p> I am a certified, experienced and bilingual Full Stack Web Developer. Despite my young age and and short time working,
+                        I have amassed abundant experience across the world of web development. 
+                    </p>
+                    <p>
+                        My dedication has seen me excel in 
+                        all the projects I have undertaken, and I'm proven in my ability to understand the basic idea of my 
                         clients and help them portray it in their desired web page.
                     </p>
                 </div>
@@ -60,7 +64,7 @@
 
     <section class = "exp">
         <div class="section-style">
-            <h2 class="title"> Experience </h2>
+            <a name = "exp"> <h2 class="title"> Experience </h2> </a> 
             <div class="exp2">
                <div class="left">
                     <img src="img/ayc.png">
@@ -102,7 +106,7 @@
      <!-- SKILLS -->
      <section class="skills">
         <div class="section-skills">
-            <h2 class="title"> My Programming Skills </h2>
+            <a name = "skills"> <h2 class="title"> My Programming Skills </h2> </a> 
             <div class="graphs">
                 <div id="stats0" class="stats"></div>
                 <div class="bar html"></div>
@@ -123,7 +127,7 @@
     <!-- CONTACT ME-->
     <div class="contact">
         <div class="section-style">
-            <h2 class="title"> Contact me! </h2>
+            <a name="contact"> <h2 class="title"> Contact me! </h2> </a> 
             <div class="contact2">
                 <div class="left">
                     <div class="social">
@@ -157,7 +161,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <form action="#"">
+                    <form action="#"" id="form" target="_self">
                         <label for="fname"> Name </label>
                         <input type="text" id="fname" name="firstname" placeholder="name">
                     
@@ -165,9 +169,10 @@
                         <input type="text" id="lname" name="lastname" placeholder="last name">
                     
                         <label for="subject">Message</label>
-                        <textarea id="subject" name="subject" placeholder="Cuentame con que te puedo ayudar!" style="height:200px"></textarea>
-                    
-                        <input type="submit" value="Submit">
+                        <textarea id="subject" name="subject" placeholder="Cuentame con que te puedo ayudar!"></textarea>
+                        
+                        <button onclick="checkForm()"> Submit </button> 
+
                     </form>
                 </div>
             </div>
